@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "from-rpa-to-agents"
+version = "0.1.0"
+description = "Migration guide and toolkit for transitioning from RPA to agentic AI."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "erron.ai"}]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/erron-ai/from-rpa-to-agents"
+Issues = "https://github.com/erron-ai/from-rpa-to-agents/issues"
+
+[project.scripts]
+from-rpa-to-agents = "from_rpa_to_agents.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
